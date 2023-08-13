@@ -1,2 +1,4 @@
-code/commander_outputs
+commander_chains/
+backup/
 *.DS_Store
+**/__pycache__/
