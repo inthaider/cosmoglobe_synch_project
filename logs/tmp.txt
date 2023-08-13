@@ -1,0 +1,1078 @@
+ |                             Commander3                            |
+ ---------------------------------------------------------------------
+ |  Regime:                            Data Processing               |
+ |  Number of chains                       =            1            |
+ |  Number of processors in first chain    =           64            |
+ |                                                                   |
+ ---------------------------------------------------------------------
+ |  Reading data set     5 : 0.4-Haslam
+ |  Reading data set    17 : 80MHz-LWA1
+blank value : -1.6375E+30
+      140965 missing pixels ( 17.925 %), have been set to :  0.0000E+00
+blank value : -1.6375E+30
+      140965 missing pixels ( 17.925 %), have been set to :  0.0000E+00
+ |  Initializing component     2 : synch
+ |    Initializing alm tuning from init_alm_synch_beta_BP10.dat
+ |  Initializing component     4 : md
+ |  Initializing component     6 : ff
+ |  Initializing from chain = synch
+ |  Initializing from chain = ff
+ ---------------------------------------------------------------------
+ |  Time to read data =       22.525 sec
+ |  Starting Gibbs sampling
+ |  Chain =    1 -- chisq =   0.16114429E+09
+ ---------------------------------------------------------------------
+ |  Chain =    1 -- Iteration =        1
+ |  Chain =    1 -- CG sample group =    1 of    2
+ |  CG initialize preconditioner, time =     0.26
+ |  CG iter.     1 -- res =   0.48302E+10, tol =   0.79338E+01, time =     0.10
+ |  CG iter.     2 -- res =   0.24533E+09, tol =   0.79338E+01, time =     0.13
+ |  CG iter.     3 -- res =   0.65024E+09, tol =   0.79338E+01, time =     0.10
+ |  CG iter.     4 -- res =   0.34421E+09, tol =   0.79338E+01, time =     0.10
+ |  CG iter.     5 -- res =   0.31887E+09, tol =   0.79338E+01, time =     0.10
+ |  CG iter.     6 -- res =   0.11577E+09, tol =   0.79338E+01, time =     0.10
+ |  CG iter.     7 -- res =   0.33446E+08, tol =   0.79338E+01, time =     0.09
+ |  CG iter.     8 -- res =   0.15680E+08, tol =   0.79338E+01, time =     0.09
+ |  CG iter.     9 -- res =   0.16901E+08, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    10 -- res =   0.83737E+07, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    11 -- res =   0.30809E+08, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    12 -- res =   0.94041E+07, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    13 -- res =   0.60262E+07, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    14 -- res =   0.40666E+07, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    15 -- res =   0.27344E+07, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    16 -- res =   0.16606E+07, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    17 -- res =   0.15464E+07, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    18 -- res =   0.42217E+07, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    19 -- res =   0.95168E+06, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    20 -- res =   0.13904E+08, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    21 -- res =   0.76740E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    22 -- res =   0.44232E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    23 -- res =   0.34889E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    24 -- res =   0.27161E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    25 -- res =   0.25819E+06, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    26 -- res =   0.22489E+06, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    27 -- res =   0.25974E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    28 -- res =   0.11461E+08, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    29 -- res =   0.41144E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    30 -- res =   0.33189E+06, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    31 -- res =   0.17086E+07, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    32 -- res =   0.28615E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    33 -- res =   0.23162E+06, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    34 -- res =   0.66831E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    35 -- res =   0.24228E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    36 -- res =   0.31660E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    37 -- res =   0.25667E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    38 -- res =   0.44556E+07, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    39 -- res =   0.15745E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    40 -- res =   0.12352E+06, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    41 -- res =   0.10721E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    42 -- res =   0.98209E+05, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    43 -- res =   0.10354E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    44 -- res =   0.61453E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    45 -- res =   0.16588E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    46 -- res =   0.15400E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    47 -- res =   0.18856E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    48 -- res =   0.59321E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    49 -- res =   0.65874E+05, tol =   0.79338E+01, time =     0.15
+ |  CG iter.    50 -- res =   0.12229E+06, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    51 -- res =   0.44613E+05, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    52 -- res =   0.33463E+05, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    53 -- res =   0.15542E+06, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    54 -- res =   0.21990E+05, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    55 -- res =   0.72071E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    56 -- res =   0.14170E+05, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    57 -- res =   0.14080E+06, tol =   0.79338E+01, time =     0.14
+ |  CG iter.    58 -- res =   0.92086E+05, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    59 -- res =   0.11475E+05, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    60 -- res =   0.86853E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    61 -- res =   0.84165E+04, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    62 -- res =   0.19002E+05, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    63 -- res =   0.57548E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    64 -- res =   0.41692E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    65 -- res =   0.47730E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    66 -- res =   0.54770E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    67 -- res =   0.37563E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    68 -- res =   0.17858E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    69 -- res =   0.14574E+05, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    70 -- res =   0.13982E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    71 -- res =   0.10017E+04, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    72 -- res =   0.60703E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    73 -- res =   0.78122E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    74 -- res =   0.12004E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    75 -- res =   0.32631E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    76 -- res =   0.54134E+03, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    77 -- res =   0.51714E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    78 -- res =   0.12624E+04, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    79 -- res =   0.75686E+03, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    80 -- res =   0.45083E+04, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    81 -- res =   0.97907E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    82 -- res =   0.95524E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    83 -- res =   0.91015E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    84 -- res =   0.93930E+03, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    85 -- res =   0.61882E+03, tol =   0.79338E+01, time =     0.14
+ |  CG iter.    86 -- res =   0.28512E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    87 -- res =   0.23919E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    88 -- res =   0.35385E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    89 -- res =   0.13375E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    90 -- res =   0.37598E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    91 -- res =   0.18472E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    92 -- res =   0.31357E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    93 -- res =   0.15336E+03, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    94 -- res =   0.13457E+03, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    95 -- res =   0.18429E+04, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    96 -- res =   0.21587E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    97 -- res =   0.14516E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    98 -- res =   0.56290E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.    99 -- res =   0.55878E+03, tol =   0.79338E+01, time =     0.09
+ |  CG iter.   100 -- res =   0.86985E+02, tol =   0.79338E+01, time =     0.13
+ |  Final CG iter   101 -- res =   0.86985E+02, tol =   0.79338E+01
+ |  Band monopole prior correction for -- comp: synch -- prior band: 0.4-Haslam
+ |  Band monopole prior (mu,RMS)    8899961.719         0.000
+ |  New band monopole               8900000.000
+ |  Old band monopole               9940000.000
+ |  Change to band monopole        -1040000.000
+ |  Change to component monopole    1039995.527
+ |
+ |  Monopole prior correction (with dipole estimate) for component: ff
+ |    Monopole (dipole):   326.072  (   -288.370   636.780   450.104 )
+ |
+ |  Chain =    1 -- CG sample group =    2 of    2
+ |  CG initialize preconditioner, time =     0.27
+ |  CG iter.     1 -- res =   0.36225E+14, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     2 -- res =   0.28813E+00, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     3 -- res =   0.32509E-14, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     4 -- res =   0.49854E-29, tol =   0.47627E+12, time =     0.08
+ |  CG iter.     5 -- res =   0.57021E-55, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     6 -- res =   0.17437E-72, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     7 -- res =   0.30939E-87, tol =   0.47627E+12, time =     0.07
+ |  Final CG iter     8 -- res =   0.00000E+00, tol =   0.47627E+12
+ |  Band monopole of '0.4-Haslam' used as zero-level prior
+ |     Revert back to pre-CG value:    8899961.719
+ |     (Sampled value in CG:          0.000 )
+ |  Chain =    1 -- chisq =   0.83898528E+08
+ |  Chain =    1 -- wall time =       16.482 sec
+ ---------------------------------------------------------------------
+ |  Chain =    1 -- Iteration =        2
+ |   Sampling synch beta
+ | Sampling with cholesky matrix
+ | using region priors -3.100 -3.100 -3.100 -3.100
+ | # sample:      0 - chisq:         0.00 prior:  18.46 - a_00:   -3.04  -3.27  -3.27
+ | regs: -3.316 -2.876 -3.396 -3.091
+ | QU      1 - chisq:         0.00    17.70 diff:    0.76 - a00: -3.2633
+
+ | regs: -3.316 -2.897 -3.396 -3.059
+ | QU      2 - chisq:         0.00    17.03 diff:    0.67 - a00: -3.2661
+
+ | regs: -3.316 -2.912 -3.396 -3.073
+ | QU      3 - chisq:         0.00    18.30 diff:   -1.27 - a00: -3.2615
+
+ | regs: -3.316 -2.885 -3.396 -3.051
+ | QU      4 - chisq:         0.00    18.70 diff:   -0.40 - a00: -3.2602
+
+ | regs: -3.316 -2.877 -3.396 -3.044
+ | QU      5 - chisq:         0.00    18.18 diff:    0.52 - a00: -3.2610
+
+ | regs: -3.316 -2.889 -3.396 -3.045
+ | QU      6 - chisq:         0.00    18.63 diff:   -0.45 - a00: -3.2601
+
+ | regs: -3.316 -2.879 -3.396 -3.043
+ | QU      7 - chisq:        -1.13    19.76 diff:   -1.13 - a00: -3.2580
+
+ | regs: -3.316 -2.856 -3.396 -3.038
+ | QU      8 - chisq:         0.00    18.52 diff:    0.11 - a00: -3.2608
+
+ | regs: -3.316 -2.880 -3.396 -3.048
+ | QU      9 - chisq:         0.00    18.09 diff:    0.43 - a00: -3.2635
+
+ | regs: -3.316 -2.887 -3.396 -3.065
+ | QU     10 - chisq:         0.00    17.62 diff:    0.47 - a00: -3.2616
+
+ | regs: -3.316 -2.903 -3.396 -3.043
+ | QU     10 - chisq:         0.00    17.62 diff:    0.84 - a00: -3.2616
+ | regs: -3.316 -2.903 -3.396 -3.043
+ | QU     11 - chisq:         0.00    16.86 diff:    0.76 - a00: -3.2629
+
+ | regs: -3.316 -2.924 -3.396 -3.043
+ | QU     12 - chisq:         0.00    17.35 diff:   -0.49 - a00: -3.2572
+
+ | regs: -3.316 -2.931 -3.396 -2.997
+ | QU     13 - chisq:         0.00    17.09 diff:    0.26 - a00: -3.2565
+
+ | regs: -3.316 -2.948 -3.396 -2.983
+ | QU     14 - chisq:         0.00    16.77 diff:    0.32 - a00: -3.2598
+
+ | regs: -3.316 -2.939 -3.396 -3.013
+ | QU     15 - chisq:         0.00    16.38 diff:    0.38 - a00: -3.2633
+
+ | regs: -3.316 -2.939 -3.396 -3.039
+ | QU     16 - chisq:         0.00    16.78 diff:   -0.40 - a00: -3.2619
+
+ | regs: -3.316 -2.929 -3.396 -3.033
+ | QU     17 - chisq:         0.00    16.06 diff:    0.72 - a00: -3.2619
+
+ | regs: -3.316 -2.959 -3.396 -3.020
+ | QU     18 - chisq:         0.00    15.87 diff:    0.19 - a00: -3.2646
+
+ | regs: -3.316 -2.955 -3.396 -3.041
+ | QU     19 - chisq:         0.00    16.50 diff:   -0.63 - a00: -3.2633
+
+ | regs: -3.316 -2.935 -3.396 -3.041
+ | QU     20 - chisq:         0.00    16.08 diff:    0.43 - a00: -3.2681
+
+ | regs: -3.316 -2.939 -3.396 -3.076
+ | QU     20 - chisq:         0.00    16.08 diff:    1.54 - a00: -3.2681
+ | regs: -3.316 -2.939 -3.396 -3.076
+ | QU     21 - chisq:         0.00    15.38 diff:    0.69 - a00: -3.2715
+
+ | regs: -3.316 -2.960 -3.396 -3.091
+ | QU     22 - chisq:         0.00    16.14 diff:   -0.75 - a00: -3.2760
+
+ | regs: -3.316 -2.939 -3.396 -3.135
+ | QU     23 - chisq:         0.00    14.80 diff:    1.33 - a00: -3.2724
+
+ | regs: -3.316 -2.983 -3.396 -3.087
+ | QU     24 - chisq:         0.00    14.76 diff:    0.04 - a00: -3.2786
+
+ | regs: -3.316 -2.989 -3.396 -3.132
+ | QU     25 - chisq:         0.00    15.78 diff:   -1.02 - a00: -3.2746
+
+ | regs: -3.316 -2.948 -3.396 -3.121
+ | QU     25 - diff last   25     2.67 - accept rate: 0.960 - time/sample:  0.87
+ | Increasing steplen ->    2.00000
+ | QU     26 - chisq:         0.00    15.37 diff:    0.42 - a00: -3.2771
+
+ | regs: -3.316 -2.964 -3.396 -3.131
+ | nsamp samples reached          26
+ |    Sampling synch beta
+ | Sampling poltype index           1 of            2
+ |   Monopoles of active bands in sampling
+ |   label         band_number  mono[uK_RJ]  mu[uK_RJ]  rms[uK_RJ]    mixing
+ |
+ |   And in band units
+ |   label         band_number  mono        mu        rms
+ | ### Using chisq lnL evaluation ###
+ |  initial (avg) spec. ind. value:   -3.35407
+ |  initial pix.reg.   1  -- spec. ind. value:   -3.35407
+ |  initial proposal length:    0.61015E-03
+ |    lnL_init =   -0.14846E+08
+ |    Proposed ind outside limits.  min:   -4.50000 -- max:   -1.50000
+ |    Proposed ind   -4.52875
+ |    Pixel region:     1
+ |      Final spec. ind. value:                     -2.98779
+ |      Difference in spec. ind., new - old:         0.36628E+00
+ |      Samples:        1978
+ |         Wall time per sample (sec):                   2.1239624E-05
+ |         Initialization wall time pixel region (sec):   2.349604
+ |         Total wall time pixel region (sec):            2.391616
+ |      Number of proposals after tuning:  1000
+ |      Proposal length after tuning:    0.61015E-03
+ |      New Log-Likelihood:                         -0.14846E+08
+ |      Difference in Log-Likelihood (new - old):    0.25980E+01
+ |
+ |  Change in monopoles of active bands in sampling. In band units.
+ |  band_label    mono_in        mono_out       prior_mean     prior_rms
+ | poltype:           2  pol:           1 CPU time specind =    5.626960
+ | Updating Mixing matrix after sampling synch beta
+ | Nmaps:           3  poltypes:           2
+ | Sampling component amplitude of synch after spectral index sampling of beta
+ |  CG initialize preconditioner, time =     0.28
+ |  CG iter.     1 -- res =   0.94975E+08, tol =   0.94224E+01, time =     0.08
+ |  CG iter.     2 -- res =   0.24732E+09, tol =   0.94224E+01, time =     0.11
+ |  CG iter.     3 -- res =   0.22387E+07, tol =   0.94224E+01, time =     0.12
+ |  CG iter.     4 -- res =   0.12537E+07, tol =   0.94224E+01, time =     0.09
+ |  CG iter.     5 -- res =   0.22838E+06, tol =   0.94224E+01, time =     0.08
+ |  CG iter.     6 -- res =   0.14500E+06, tol =   0.94224E+01, time =     0.08
+ |  CG iter.     7 -- res =   0.90524E+05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.     8 -- res =   0.56762E+05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.     9 -- res =   0.44842E+05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    10 -- res =   0.28903E+05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    11 -- res =   0.16448E+05, tol =   0.94224E+01, time =     0.10
+ |  CG iter.    12 -- res =   0.10087E+05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    13 -- res =   0.68697E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    14 -- res =   0.42987E+05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    15 -- res =   0.51515E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    16 -- res =   0.37748E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    17 -- res =   0.32006E+04, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    18 -- res =   0.25550E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    19 -- res =   0.20727E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    20 -- res =   0.17003E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    21 -- res =   0.14776E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    22 -- res =   0.12751E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    23 -- res =   0.10802E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    24 -- res =   0.84891E+03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    25 -- res =   0.66182E+03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    26 -- res =   0.61119E+03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    27 -- res =   0.24308E+04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    28 -- res =   0.40933E+03, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    29 -- res =   0.42104E+03, tol =   0.94224E+01, time =     0.10
+ |  CG iter.    30 -- res =   0.36569E+03, tol =   0.94224E+01, time =     0.11
+ |  CG iter.    31 -- res =   0.19756E+03, tol =   0.94224E+01, time =     0.10
+ |  CG iter.    32 -- res =   0.13200E+03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    33 -- res =   0.88847E+02, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    34 -- res =   0.63030E+02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    35 -- res =   0.43414E+02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    36 -- res =   0.30487E+02, tol =   0.94224E+01, time =     0.11
+ |  CG iter.    37 -- res =   0.21347E+02, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    38 -- res =   0.14002E+02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    39 -- res =   0.11472E+02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    40 -- res =   0.34380E+02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    41 -- res =   0.62821E+01, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    42 -- res =   0.42690E+01, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    43 -- res =   0.29577E+01, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    44 -- res =   0.22464E+01, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    45 -- res =   0.15575E+01, tol =   0.94224E+01, time =     0.11
+ |  CG iter.    46 -- res =   0.10649E+01, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    47 -- res =   0.75097E+00, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    48 -- res =   0.52194E+00, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    49 -- res =   0.33326E+00, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    50 -- res =   0.22879E+00, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    51 -- res =   0.16132E+00, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    52 -- res =   0.83373E+00, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    53 -- res =   0.10306E+00, tol =   0.94224E+01, time =     0.11
+ |  CG iter.    54 -- res =   0.68677E-01, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    55 -- res =   0.52687E-01, tol =   0.94224E+01, time =     0.10
+ |  CG iter.    56 -- res =   0.51634E-01, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    57 -- res =   0.24577E-01, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    58 -- res =   0.15006E-01, tol =   0.94224E+01, time =     0.12
+ |  CG iter.    59 -- res =   0.10769E-01, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    60 -- res =   0.72465E-02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    61 -- res =   0.49608E-02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    62 -- res =   0.33605E-02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    63 -- res =   0.24528E-02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    64 -- res =   0.19641E-02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    65 -- res =   0.10252E-01, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    66 -- res =   0.16495E-02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    67 -- res =   0.12279E-02, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    68 -- res =   0.94524E-03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    69 -- res =   0.75265E-03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    70 -- res =   0.59164E-03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    71 -- res =   0.45298E-03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    72 -- res =   0.33951E-03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    73 -- res =   0.25935E-03, tol =   0.94224E+01, time =     0.11
+ |  CG iter.    74 -- res =   0.17701E-03, tol =   0.94224E+01, time =     0.09
+ |  CG iter.    75 -- res =   0.12556E-03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    76 -- res =   0.81875E-04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    77 -- res =   0.21787E-03, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    78 -- res =   0.60486E-04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    79 -- res =   0.32957E-04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    80 -- res =   0.22959E-04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    81 -- res =   0.19213E-04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    82 -- res =   0.22716E-04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    83 -- res =   0.11513E-04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    84 -- res =   0.78153E-05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    85 -- res =   0.57114E-05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    86 -- res =   0.44565E-05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    87 -- res =   0.35989E-05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    88 -- res =   0.29878E-05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    89 -- res =   0.23909E-05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    90 -- res =   0.12664E-04, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    91 -- res =   0.16711E-05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    92 -- res =   0.11840E-05, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    93 -- res =   0.80372E-06, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    94 -- res =   0.56701E-06, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    95 -- res =   0.40327E-06, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    96 -- res =   0.27442E-06, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    97 -- res =   0.17683E-06, tol =   0.94224E+01, time =     0.08
+ |  CG iter.    98 -- res =   0.11258E-06, tol =   0.94224E+01, time =     0.12
+ |  CG iter.    99 -- res =   0.68183E-07, tol =   0.94224E+01, time =     0.08
+ |  CG iter.   100 -- res =   0.44650E-07, tol =   0.94224E+01, time =     0.08
+ |  Final CG iter   101 -- res =   0.44650E-07, tol =   0.94224E+01
+ |  Band monopole prior correction for -- comp: synch -- prior band: 0.4-Haslam
+ |  Band monopole prior (mu,RMS)    8899961.719         0.000
+ |  New band monopole               8900000.000
+ |  Old band monopole               8900000.000
+ |  Change to band monopole               0.000
+ |  Change to component monopole          0.000
+ |
+ | Sampling monopoles of band after prior correcting monopole of synch amplitude
+ | Using CG sampling group:           2
+ |  CG initialize preconditioner, time =     0.27
+ |  CG iter.     1 -- res =   0.14162E+02, tol =   0.47627E+12, time =     0.08
+ |  CG iter.     2 -- res =   0.12293E-12, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     3 -- res =   0.16589E-27, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     4 -- res =   0.11123E-41, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     5 -- res =   0.25102E-56, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     6 -- res =   0.83438E-82, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     7 -- res =   0.52824E-99, tol =   0.47627E+12, time =     0.07
+ |  Final CG iter     8 -- res =   0.00000E+00, tol =   0.47627E+12
+ |  Band monopole of '0.4-Haslam' used as zero-level prior
+ |     Revert back to pre-CG value:    8899961.719
+ |     (Sampled value in CG:          0.000 )
+ | CPU time specind =    41.61301
+ |  Chain =    1 -- CG sample group =    1 of    2
+ |  CG initialize preconditioner, time =     0.27
+ |  CG iter.     1 -- res =   0.20817E+08, tol =   0.98144E+01, time =     0.13
+ |  CG iter.     2 -- res =   0.36626E+09, tol =   0.98144E+01, time =     0.09
+ |  CG iter.     3 -- res =   0.13073E+08, tol =   0.98144E+01, time =     0.09
+ |  CG iter.     4 -- res =   0.20554E+07, tol =   0.98144E+01, time =     0.10
+ |  CG iter.     5 -- res =   0.20920E+07, tol =   0.98144E+01, time =     0.09
+ |  CG iter.     6 -- res =   0.25358E+07, tol =   0.98144E+01, time =     0.09
+ |  CG iter.     7 -- res =   0.63978E+06, tol =   0.98144E+01, time =     0.09
+ |  CG iter.     8 -- res =   0.82833E+06, tol =   0.98144E+01, time =     0.09
+ |  CG iter.     9 -- res =   0.66435E+06, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    10 -- res =   0.47967E+06, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    11 -- res =   0.71747E+05, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    12 -- res =   0.96240E+06, tol =   0.98144E+01, time =     0.11
+ |  CG iter.    13 -- res =   0.37535E+05, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    14 -- res =   0.18943E+05, tol =   0.98144E+01, time =     0.14
+ |  CG iter.    15 -- res =   0.74136E+04, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    16 -- res =   0.33729E+04, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    17 -- res =   0.24456E+04, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    18 -- res =   0.21017E+04, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    19 -- res =   0.25623E+04, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    20 -- res =   0.11423E+04, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    21 -- res =   0.34872E+04, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    22 -- res =   0.41028E+03, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    23 -- res =   0.25960E+03, tol =   0.98144E+01, time =     0.12
+ |  CG iter.    24 -- res =   0.14972E+03, tol =   0.98144E+01, time =     0.11
+ |  CG iter.    25 -- res =   0.10006E+03, tol =   0.98144E+01, time =     0.11
+ |  CG iter.    26 -- res =   0.75036E+02, tol =   0.98144E+01, time =     0.12
+ |  CG iter.    27 -- res =   0.73709E+02, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    28 -- res =   0.20114E+03, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    29 -- res =   0.13958E+03, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    30 -- res =   0.16102E+03, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    31 -- res =   0.57779E+02, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    32 -- res =   0.44160E+02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    33 -- res =   0.23263E+03, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    34 -- res =   0.55740E+02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    35 -- res =   0.43210E+02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    36 -- res =   0.22863E+02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    37 -- res =   0.21228E+02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    38 -- res =   0.97995E+03, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    39 -- res =   0.19731E+02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    40 -- res =   0.41087E+02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    41 -- res =   0.15833E+02, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    42 -- res =   0.12492E+02, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    43 -- res =   0.10134E+02, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    44 -- res =   0.67469E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    45 -- res =   0.53035E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    46 -- res =   0.57386E+02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    47 -- res =   0.63755E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    48 -- res =   0.81149E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    49 -- res =   0.49928E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    50 -- res =   0.23154E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    51 -- res =   0.14656E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    52 -- res =   0.20740E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    53 -- res =   0.10356E+01, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    54 -- res =   0.31401E+01, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    55 -- res =   0.96854E+01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    56 -- res =   0.71102E+00, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    57 -- res =   0.43426E+00, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    58 -- res =   0.66580E+00, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    59 -- res =   0.52148E+00, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    60 -- res =   0.24830E+00, tol =   0.98144E+01, time =     0.11
+ |  CG iter.    61 -- res =   0.17599E+00, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    62 -- res =   0.51898E+00, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    63 -- res =   0.49308E+00, tol =   0.98144E+01, time =     0.11
+ |  CG iter.    64 -- res =   0.18262E+00, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    65 -- res =   0.78188E-01, tol =   0.98144E+01, time =     0.12
+ |  CG iter.    66 -- res =   0.58854E-01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    67 -- res =   0.44142E-01, tol =   0.98144E+01, time =     0.11
+ |  CG iter.    68 -- res =   0.48420E-01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    69 -- res =   0.52530E-01, tol =   0.98144E+01, time =     0.11
+ |  CG iter.    70 -- res =   0.22129E-01, tol =   0.98144E+01, time =     0.11
+ |  CG iter.    71 -- res =   0.11481E+01, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    72 -- res =   0.16297E-01, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    73 -- res =   0.11201E-01, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    74 -- res =   0.81231E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    75 -- res =   0.64938E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    76 -- res =   0.24149E-01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    77 -- res =   0.14084E-01, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    78 -- res =   0.46382E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    79 -- res =   0.91990E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    80 -- res =   0.57208E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    81 -- res =   0.25278E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    82 -- res =   0.69145E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    83 -- res =   0.15416E-02, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    84 -- res =   0.10034E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    85 -- res =   0.70761E-03, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    86 -- res =   0.10730E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    87 -- res =   0.88693E-03, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    88 -- res =   0.12596E-02, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    89 -- res =   0.33896E-03, tol =   0.98144E+01, time =     0.10
+ |  CG iter.    90 -- res =   0.30095E-03, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    91 -- res =   0.11209E-02, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    92 -- res =   0.50794E-03, tol =   0.98144E+01, time =     0.12
+ |  CG iter.    93 -- res =   0.22361E-03, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    94 -- res =   0.14936E-03, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    95 -- res =   0.13154E-03, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    96 -- res =   0.32771E-02, tol =   0.98144E+01, time =     0.13
+ |  CG iter.    97 -- res =   0.10495E-03, tol =   0.98144E+01, time =     0.14
+ |  CG iter.    98 -- res =   0.66937E-04, tol =   0.98144E+01, time =     0.09
+ |  CG iter.    99 -- res =   0.52010E-04, tol =   0.98144E+01, time =     0.09
+ |  CG iter.   100 -- res =   0.10464E-03, tol =   0.98144E+01, time =     0.09
+ |  Final CG iter   101 -- res =   0.10464E-03, tol =   0.98144E+01
+ |  Band monopole prior correction for -- comp: synch -- prior band: 0.4-Haslam
+ |  Band monopole prior (mu,RMS)    8899961.719         0.000
+ |  New band monopole               8900000.000
+ |  Old band monopole               8900000.000
+ |  Change to band monopole               0.000
+ |  Change to component monopole          0.000
+ |
+ |  Monopole prior correction (with dipole estimate) for component: ff
+ |    Monopole (dipole):   -70.518  (    -21.095    56.216    57.341 )
+ |
+ |  Chain =    1 -- CG sample group =    2 of    2
+ |  CG initialize preconditioner, time =     0.27
+ |  CG iter.     1 -- res =   0.43529E+01, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     2 -- res =   0.27400E-13, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     3 -- res =   0.37038E-28, tol =   0.47627E+12, time =     0.09
+ |  CG iter.     4 -- res =   0.18237E-42, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     5 -- res =   0.39338E-57, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     6 -- res =   0.28310E-82, tol =   0.47627E+12, time =     0.07
+ |  CG iter.     7 -- res =   0.14090-100, tol =   0.47627E+12, time =     0.08
+ |  Final CG iter     8 -- res =   0.00000E+00, tol =   0.47627E+12
+ |  Band monopole of '0.4-Haslam' used as zero-level prior
+ |     Revert back to pre-CG value:    8899961.719
+ |     (Sampled value in CG:          0.000 )
+ |  Chain =    1 -- chisq =   0.75194827E+07
+ |  Chain =    1 -- wall time =       57.940 sec
+ |  Cleaning up and finalizing
+[jibran@owl26 jibran]$ reload bash
+Loading mpi version 2021.7.0
+Loading icc version 2022.2.0
+Loading compiler-rt version 2022.2.0
+Loading mkl version 2022.2.0
+[jibran@owl26 jibran]$ runcommander
+commander3: no process found
+ Saving parameter file to
+ /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander-chains/sample11_betachisq_
+ bd005017_cp020406_c1_k2/param_jibran_lwa1_80mhz.txt
+ ---------------------------------------------------------------------
+ |                             Commander3                            |
+ ---------------------------------------------------------------------
+ |  Regime:                            Data Processing               |
+ |  Number of chains                       =            1            |
+ |  Number of processors in first chain    =           64            |
+ |                                                                   |
+ ---------------------------------------------------------------------
+ |  Reading data set     5 : 0.4-Haslam
+ |  Reading data set    17 : 80MHz-LWA1
+blank value : -1.6375E+30
+      140965 missing pixels ( 17.925 %), have been set to :  0.0000E+00
+blank value : -1.6375E+30
+      140965 missing pixels ( 17.925 %), have been set to :  0.0000E+00
+ |  Initializing component     2 : synch
+ |    Initializing alm tuning from init_alm_synch_beta_BP10.dat
+ |  Initializing component     4 : md
+ |  Initializing component     6 : ff
+ |  Initializing from chain = synch
+ |  Initializing from chain = ff
+ ---------------------------------------------------------------------
+ |  Time to read data =       22.209 sec
+ |  Starting Gibbs sampling
+ |  Chain =    1 -- chisq =   0.16114429E+09
+ ---------------------------------------------------------------------
+ |  Chain =    1 -- Iteration =        1
+ |  Chain =    1 -- CG sample group =    1 of    2
+ |  CG initialize preconditioner, time =     0.24
+ |  CG iter.     1 -- res =   0.48302E+10, tol =   0.79338E+01, time =     0.11
+ |  CG iter.     2 -- res =   0.24533E+09, tol =   0.79338E+01, time =     0.11
+ |  CG iter.     3 -- res =   0.65024E+09, tol =   0.79338E+01, time =     0.11
+ |  CG iter.     4 -- res =   0.34421E+09, tol =   0.79338E+01, time =     0.11
+ |  CG iter.     5 -- res =   0.31887E+09, tol =   0.79338E+01, time =     0.10
+ |  CG iter.     6 -- res =   0.11577E+09, tol =   0.79338E+01, time =     0.10
+ |  CG iter.     7 -- res =   0.33446E+08, tol =   0.79338E+01, time =     0.10
+ |  CG iter.     8 -- res =   0.15680E+08, tol =   0.79338E+01, time =     0.11
+ |  CG iter.     9 -- res =   0.16901E+08, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    10 -- res =   0.83737E+07, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    11 -- res =   0.30809E+08, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    12 -- res =   0.94041E+07, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    13 -- res =   0.60262E+07, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    14 -- res =   0.40666E+07, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    15 -- res =   0.27344E+07, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    16 -- res =   0.16606E+07, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    17 -- res =   0.15464E+07, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    18 -- res =   0.42217E+07, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    19 -- res =   0.95168E+06, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    20 -- res =   0.13904E+08, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    21 -- res =   0.76740E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    22 -- res =   0.44232E+06, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    23 -- res =   0.34889E+06, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    24 -- res =   0.27161E+06, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    25 -- res =   0.25819E+06, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    26 -- res =   0.22489E+06, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    27 -- res =   0.25974E+06, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    28 -- res =   0.11461E+08, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    29 -- res =   0.41144E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    30 -- res =   0.33189E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    31 -- res =   0.17086E+07, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    32 -- res =   0.28615E+06, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    33 -- res =   0.23162E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    34 -- res =   0.66831E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    35 -- res =   0.24228E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    36 -- res =   0.31660E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    37 -- res =   0.25667E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    38 -- res =   0.44556E+07, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    39 -- res =   0.15745E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    40 -- res =   0.12352E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    41 -- res =   0.10721E+06, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    42 -- res =   0.98209E+05, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    43 -- res =   0.10354E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    44 -- res =   0.61453E+06, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    45 -- res =   0.16588E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    46 -- res =   0.15400E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    47 -- res =   0.18856E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    48 -- res =   0.59321E+05, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    49 -- res =   0.65874E+05, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    50 -- res =   0.12229E+06, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    51 -- res =   0.44613E+05, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    52 -- res =   0.33463E+05, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    53 -- res =   0.15542E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    54 -- res =   0.21990E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    55 -- res =   0.72071E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    56 -- res =   0.14170E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    57 -- res =   0.14080E+06, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    58 -- res =   0.92086E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    59 -- res =   0.11475E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    60 -- res =   0.86853E+04, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    61 -- res =   0.84165E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    62 -- res =   0.19002E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    63 -- res =   0.57548E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    64 -- res =   0.41692E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    65 -- res =   0.47730E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    66 -- res =   0.54770E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    67 -- res =   0.37563E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    68 -- res =   0.17858E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    69 -- res =   0.14574E+05, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    70 -- res =   0.13982E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    71 -- res =   0.10017E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    72 -- res =   0.60703E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    73 -- res =   0.78122E+03, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    74 -- res =   0.12004E+04, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    75 -- res =   0.32631E+04, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    76 -- res =   0.54134E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    77 -- res =   0.51714E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    78 -- res =   0.12624E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    79 -- res =   0.75686E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    80 -- res =   0.45083E+04, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    81 -- res =   0.97907E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    82 -- res =   0.95524E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    83 -- res =   0.91015E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    84 -- res =   0.93930E+03, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    85 -- res =   0.61882E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    86 -- res =   0.28512E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    87 -- res =   0.23919E+03, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    88 -- res =   0.35385E+03, tol =   0.79338E+01, time =     0.13
+ |  CG iter.    89 -- res =   0.13375E+04, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    90 -- res =   0.37598E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    91 -- res =   0.18472E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    92 -- res =   0.31357E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    93 -- res =   0.15336E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    94 -- res =   0.13457E+03, tol =   0.79338E+01, time =     0.12
+ |  CG iter.    95 -- res =   0.18429E+04, tol =   0.79338E+01, time =     0.14
+ |  CG iter.    96 -- res =   0.21587E+03, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    97 -- res =   0.14516E+03, tol =   0.79338E+01, time =     0.10
+ |  CG iter.    98 -- res =   0.56290E+03, tol =   0.79338E+01, time =     0.11
+ |  CG iter.    99 -- res =   0.55878E+03, tol =   0.79338E+01, time =     0.12
+ |  CG iter.   100 -- res =   0.86985E+02, tol =   0.79338E+01, time =     0.10
+ |  Final CG iter   101 -- res =   0.86985E+02, tol =   0.79338E+01
+ |  Band monopole prior correction for -- comp: synch -- prior band: 0.4-Haslam
+ |  Band monopole prior (mu,RMS)    8899961.719         0.000
+ |  New band monopole               8900000.000
+ |  Old band monopole               9940000.000
+ |  Change to band monopole        -1040000.000
+ |  Change to component monopole    1039995.527
+ |
+ |  Monopole prior correction (with dipole estimate) for component: ff
+ |    Monopole (dipole):   326.072  (   -288.370   636.780   450.104 )
+ |
+ |  Chain =    1 -- CG sample group =    2 of    2
+ |  CG initialize preconditioner, time =     0.26
+forrtl: error (72): floating overflow
+Image              PC                Routine            Line        Source
+libpthread-2.17.s  00007F2C63511630  Unknown               Unknown  Unknown
+commander3         000000000063DFA3  comm_utils_mp_mpi         614  comm_utils.f90
+commander3         00000000007E0BF5  comm_cr_mod_mp_so         208  comm_cr_mod.f90
+commander3         000000000074ADC7  comm_signal_mod_m         249  comm_signal_mod.f90
+commander3         0000000000487449  MAIN__                    286  commander.f90
+commander3         000000000048621D  Unknown               Unknown  Unknown
+libc-2.17.so       00007F2C62468555  __libc_start_main     Unknown  Unknown
+commander3         0000000000486136  Unknown               Unknown  Unknown
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 73003 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 6 (Aborted)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 73004 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 73005 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 73006 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 73007 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 73008 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 73009 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 73010 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 8 PID 73011 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 9 PID 73012 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 10 PID 73013 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 11 PID 73014 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 12 PID 73015 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 13 PID 73016 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 14 PID 73017 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 15 PID 73018 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 16 PID 73019 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 17 PID 73020 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 18 PID 73021 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 19 PID 73022 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 20 PID 73023 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 21 PID 73024 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 22 PID 73025 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 23 PID 73026 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 24 PID 73027 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 25 PID 73028 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 26 PID 73029 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 27 PID 73030 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 28 PID 73031 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 29 PID 73032 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 30 PID 73033 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 31 PID 73034 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 32 PID 73035 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 33 PID 73036 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 34 PID 73037 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 35 PID 73038 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 36 PID 73039 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 37 PID 73040 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 38 PID 73041 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 39 PID 73042 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 40 PID 73043 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 41 PID 73044 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 42 PID 73045 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 43 PID 73046 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 44 PID 73047 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 45 PID 73048 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 46 PID 73049 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 47 PID 73050 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 48 PID 73051 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 49 PID 73052 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 50 PID 73053 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 51 PID 73054 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 52 PID 73055 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 53 PID 73056 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 54 PID 73057 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 55 PID 73058 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 56 PID 73059 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 57 PID 73060 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 58 PID 73061 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 59 PID 73062 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 60 PID 73063 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 61 PID 73064 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 62 PID 73065 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 63 PID 73066 RUNNING AT owl26.uio.no
+=   KILLED BY SIGNAL: 9 (Killed)
+===================================================================================
+[jibran@owl26 jibran]$ pwd
+/mn/stornext/d16/cmbco/AST9240/2022/jibran
+[jibran@owl26 jibran]$

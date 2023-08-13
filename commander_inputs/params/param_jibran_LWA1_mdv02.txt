@@ -1,0 +1,597 @@
+**************************************************************
+*                  Commander parameter file                  *
+**************************************************************
+@DEFAULT LFI_tod.defaults
+
+#### Optimize good for testing and shit (not good for science!)
+#### Sample is what you need for science
+OPERATION                     = sample  # {sample,optimize}
+VERBOSITY                     = 3       # [0,...,3]
+
+##############################################################
+#                   Algorithm specification                  #
+##############################################################
+
+# Monte Carlo options
+NUMCHAIN         = 1       # Number of independent chains
+NUM_GIBBS_ITER   = 100       # Length of each Markov chain
+CHAIN_STATUS     = new
+NUM_INIT_CHAINS  = 1
+INIT_CHAIN01     = /mn/stornext/d16/cmbco/bp/dwatts/WMAP/chains_WMAP_BP_KKaQVW_220810/chain_c0001.h5:15
+
+SAMPLE_SIGNAL_AMPLITUDES      = .true.
+SAMPLE_SPECTRAL_INDICES       = .true.
+
+ENABLE_TOD_ANALYSIS           = .false.
+# TOD sampling options
+
+# For some reason BP proposals doesn't work for WMAP
+TOD_NUM_BP_PROPOSALS_PER_ITER    = 1    # 1 for sampling; >= 1 for optimize
+TOD_OUTPUT_4D_MAP_EVERY_NTH_ITER = 0
+
+##############################################################
+#                       Output options                       #
+##############################################################
+
+###################### Jibran #######################
+OUTPUT_SIGNALS_PER_BAND        = .true.
+OUTPUT_DIRECTORY              = /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_chains/sample11_betachisq_mdv02_bd005017_cp020406_c1_k100
+###################### Jibran #######################
+
+##############################################################
+#                         Data sets                          #
+##############################################################	
+
+DATA_DIRECTORY                 = /mn/stornext/d16/cmbco/AST9240/2022/data
+
+###################### Jibran #######################
+NUMBAND                        = 25
+###################### Jibran #######################
+
+# LFI
+INCLUDE_BAND001                = .false.    # 30 GHz
+INCLUDE_BAND002                = .false.    # 44 GHz
+INCLUDE_BAND003                = .false.    # 70 GHz
+
+# HFI T	       	   
+INCLUDE_BAND004                = .false.    # 857 GHz
+
+# Haslam T - THIS IS ALWAYS TRUE
+INCLUDE_BAND005                = .true.     # Haslam - TRUE
+
+# HFI P
+INCLUDE_BAND006                = .false.    # 353 GHz P
+
+# WMAP TOD
+INCLUDE_BAND007                = .false.    # WMAP K TOD
+INCLUDE_BAND008                = .false.    # WMAP Ka TOD
+INCLUDE_BAND009                = .false.    # WMAP Q1 TOD
+INCLUDE_BAND010                = .false.    # WMAP Q2 TOD
+INCLUDE_BAND011                = .false.    # WMAP V1 TOD
+INCLUDE_BAND012                = .false.    # WMAP V2 TOD
+INCLUDE_BAND013                = .false.    # WMAP W1
+INCLUDE_BAND014                = .false.    # WMAP W2
+INCLUDE_BAND015                = .false.    # WMAP W3
+INCLUDE_BAND016                = .false.    # WMAP W4
+
+###################### Jibran #######################
+INCLUDE_BAND017                = .true.     # LWA1 35 MHz
+INCLUDE_BAND018                = .true.     # LWA1 38 MHz 
+INCLUDE_BAND019                = .true.     # LWA1 40 MHz 
+INCLUDE_BAND020                = .true.     # LWA1 45 MHz 
+INCLUDE_BAND021                = .true.     # LWA1 50 MHz 
+INCLUDE_BAND022                = .true.     # LWA1 60 MHz 
+INCLUDE_BAND023                = .true.     # LWA1 70 MHz 
+INCLUDE_BAND024                = .true.     # LWA1 74 MHz 
+INCLUDE_BAND025                = .true.     # LWA1 80 MHz 
+###################### Jibran #######################
+
+#############################################
+# LFI TODs                                  #
+#############################################
+
+# 30 GHz parameters
+@START 001
+@DEFAULT bands/LFI/LFI_030_TOD.defaults
+BAND_MAPFILE&&&                = tod_030_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_030_rms_c0001_k000015.fits
+BAND_REG_NOISEFILE&&&          = none
+BAND_BANDPASSFILE&&&           = LFI_instrument_v8.h5
+BAND_TOD_TYPE&&&               = LFI
+BAND_TOD_MAIN_PROCMASK&&&      = mask_proc_030_res_v5.fits
+BAND_TOD_SMALL_PROCMASK&&&     = mask_smap6.fits
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_030_v3.dat
+BAND_TOD_RIMO&&&               = LFI_instrument_v8.h5
+BAND_TOD_FILELIST&&&           = filelist_30_v18_optimized2.txt
+BAND_TOD_JUMPLIST&&&           = gain_jumps_LFI_1hour_v1.dat
+BAND_TOD_START_SCANID&&&       = 3
+BAND_TOD_END_SCANID&&&         = 44072
+BAND_TOD_INIT_FROM_HDF&&&      = default
+#BAND_TOD_INIT_FROM_HDF&&&      = /mn/stornext/d16/cmbco/bp/delivery/v10.00/v2/BP_c0001_v2.h5:1000
+BAND_TOD_LEVEL&&&              = L1
+@END 001
+
+# 44 GHz parameters
+@START 002
+@DEFAULT bands/LFI/LFI_044_TOD.defaults
+BAND_MAPFILE&&&                = tod_044_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_044_rms_c0001_k000015.fits
+BAND_REG_NOISEFILE&&&          = none
+BAND_BANDPASSFILE&&&           = LFI_instrument_v8.h5
+BAND_TOD_TYPE&&&               = LFI
+BAND_TOD_MAIN_PROCMASK&&&      = mask_proc_044_res_v5.fits
+BAND_TOD_SMALL_PROCMASK&&&     = mask_smap6.fits
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_044_v3.dat
+BAND_TOD_RIMO&&&               = LFI_instrument_v8.h5
+BAND_TOD_FILELIST&&&           = filelist_44_v18_optimized2.txt
+BAND_TOD_JUMPLIST&&&           = gain_jumps_LFI_1hour_v1.dat
+BAND_TOD_START_SCANID&&&       = 3
+BAND_TOD_END_SCANID&&&         = 44072
+BAND_TOD_INIT_FROM_HDF&&&      = default
+#BAND_TOD_INIT_FROM_HDF&&&      = /mn/stornext/d16/cmbco/bp/delivery/v10.00/v2/BP_c0001_v2.h5:1000
+BAND_TOD_LEVEL&&&              = L1
+@END 002
+
+# 70 GHz parameters
+@START 003
+@DEFAULT bands/LFI/LFI_070_TOD.defaults
+BAND_TOD_INIT_FROM_HDF&&&      = /mn/stornext/d16/cmbco/bp/delivery/v10.00/v2/BP_c0001_v2.h5:1000
+BAND_MAPFILE&&&                = tod_070_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_070_rms_c0001_k000015.fits
+BAND_REG_NOISEFILE&&&          = none
+BAND_BANDPASSFILE&&&           = LFI_instrument_v8.h5
+BAND_TOD_TYPE&&&               = LFI
+BAND_TOD_MAIN_PROCMASK&&&      = mask_proc_070_res_v5.fits
+BAND_TOD_SMALL_PROCMASK&&&     = mask_smap6_n1024.fits
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_030_v3.dat
+BAND_TOD_RIMO&&&               = LFI_instrument_v8.h5
+BAND_TOD_FILELIST&&&           = filelist_30_v18_optimized2.txt
+BAND_TOD_JUMPLIST&&&           = gain_jumps_LFI_1hour_v1.dat
+BAND_TOD_START_SCANID&&&       = 3
+BAND_TOD_END_SCANID&&&         = 44072
+BAND_TOD_INIT_FROM_HDF&&&      = default
+#BAND_TOD_INIT_FROM_HDF&&&      = /mn/stornext/d16/cmbco/bp/delivery/v10.00/v2/BP_c0001_v2.h5:1000
+BAND_TOD_LEVEL&&&              = L1
+@END 003
+
+#############################################
+# Map space additions                       #
+#############################################
+
+# 857 GHz (full frequency) parameters         
+@START 004
+@DEFAULT bands/HFI/HFI_857_map.defaults
+BAND_MAPFILE&&&                = npipe6v20_857_map_n1024_10arcmin_QUADCOR_ZODICOR_uK.fits
+BAND_NOISEFILE&&&              = npipe6v20_857_rms_n1024_10arcmin_uK_hrscaled_true.fits 
+BAND_REG_NOISEFILE&&&          = npipe6v20_857_regnoise_v1.fits
+BAND_NUM_BP_PROPOSALS_PER_ITER&&& = -1
+@END 004
+
+# Haslam 0.4 GHz
+@START 005
+@DEFAULT bands/haslam/haslam_0.4_map.defaults
+BAND_MAPFILE&&&                = haslam_n0512_60arcmin_uK.fits
+BAND_NOISEFILE&&&              = haslam_rms_n0512_60arcmin_uK_1pct_0.8K.fits
+BAND_REG_NOISEFILE&&&          = BP_haslam_rmsreg_v2.fits  none
+BAND_NUM_BP_PROPOSALS_PER_ITER&&& = -1
+@END 005
+
+# 353 GHz (full frequency) parameters; only polarization, not temperature
+@START 006
+@DEFAULT bands/HFI/HFI_353_map_pol_only.defaults
+BAND_MAPFILE&&&                = npipe6v20_353_map_n1024_uK_udgrade.fits 
+BAND_NOISEFILE&&&              = npipe6v20_353_rms_n1024_hrscaled_uK_udgrade.fits
+BAND_REG_NOISEFILE&&&          = npipe6v20_353_n2048_rms_uK_mcscaled_n1024_10arc_mean_regnoise_10uK.fits
+BAND_NUM_BP_PROPOSALS_PER_ITER&&& = -1
+@END 006
+
+#############################################
+# WMAP TODs                                 #
+#############################################
+
+# WMAP 023 K
+@START 007
+@DEFAULT bands/WMAP/WMAP_K_TOD.defaults
+BAND_TOD_INIT_FROM_HDF&&&      = chains_WMAP_K_burnin_220802/chain_c0001.h5:172
+BAND_TOD_INIT_FROM_HDF&&&      = default
+BAND_MAPFILE&&&                = tod_023-WMAP_K_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_023-WMAP_K_rms_c0001_k000015.fits
+BAND_TOD_TYPE&&&               = WMAP
+BAND_TOD_MAIN_PROCMASK&&&      = wmap_kq75_TQU_mask_r9.fits
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_023_v1.dat
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_023_v0.dat
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_TOD_FILELIST&&&           = filelist_023-WMAP_K.txt
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 1066
+BAND_TOD_TOT_NUMSCAN&&&        = 1066
+BAND_NOISE_RMS&&&_SMOOTH01     = WMAP_K_rms_n0032_5deg_mK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH02     = WMAP_K_rms_n0016_10deg_mK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH03     = WMAP_K_rms_n0016_mK_true_clean_degrade_with_rmsreg_june2021.fits
+BAND_TOD_LEVEL&&&              = L1
+@END 007
+
+
+@START 008
+@DEFAULT bands/WMAP/WMAP_Ka_TOD.defaults
+BAND_TOD_INIT_FROM_HDF&&&      = default
+BAND_MAPFILE&&&                = tod_030-WMAP_Ka_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_030-WMAP_Ka_rms_c0001_k000015.fits
+BAND_TOD_MAIN_PROCMASK&&&      = mask_hke.fits 
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_TOD_FILELIST&&&           = filelist_030-WMAP_Ka.txt
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_030_Ka_v0.dat
+BAND_NOISE_RMS&&&_SMOOTH01     = WMAP_Ka1_rms_n0032_5deg_mK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH02     = WMAP_Ka1_rms_n0016_10deg_mK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH03     = WMAP_Ka_rms_n0016_mK_true_clean_degrade_with_rmsreg_june2021.fits
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 1069
+BAND_TOD_TOT_NUMSCAN&&&        = 1069
+@END 008
+
+# WMAP 041 Q1
+@START 009
+@DEFAULT bands/WMAP/WMAP_Q1_TOD.defaults
+BAND_MAPFILE&&&                = tod_040-WMAP_Q1_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_040-WMAP_Q1_rms_c0001_k000015.fits
+BAND_TOD_INIT_FROM_HDF&&&      = default
+BAND_TOD_MAIN_PROCMASK&&&      = mask_hke.fits 
+BAND_TOD_FILELIST&&&           = filelist_040-WMAP_Q1.txt
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_040_Q1_v0.dat
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_NOISE_RMS&&&_SMOOTH01     = WMAP_Q1_rms_n0032_5deg_uK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH02     = WMAP_Q1_rms_n0016_10deg_uK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH03     = WMAP_Q1_rms_n0016_uK_true_clean_degrade_with_rmsreg_june2021.fits
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 1330
+BAND_TOD_TOT_NUMSCAN&&&        = 1330
+@END 009
+
+# WMAP 041 Q2
+@START 010
+@DEFAULT bands/WMAP/WMAP_Q2_TOD.defaults
+BAND_MAPFILE&&&                = tod_040-WMAP_Q2_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_040-WMAP_Q2_rms_c0001_k000015.fits
+BAND_TOD_INIT_FROM_HDF&&&      = default
+BAND_TOD_MAIN_PROCMASK&&&      = mask_hke.fits wmap_processing_mask_K_v6.fits  
+BAND_TOD_FILELIST&&&           = filelist_040-WMAP_Q2.txt
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_040_Q2_v0.dat
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_NOISE_RMS&&&_SMOOTH01     = WMAP_Q2_rms_n0032_5deg_uK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH02     = WMAP_Q2_rms_n0016_10deg_uK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH03     = WMAP_Q2_rms_n0016_uK_true_clean_degrade_with_rmsreg_june2021.fits
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 1328
+BAND_TOD_TOT_NUMSCAN&&&        = 1328
+@END 010
+
+# WMAP 061 V1
+@START 011
+@DEFAULT bands/WMAP/WMAP_V1_TOD.defaults
+BAND_MAPFILE&&&                = tod_060-WMAP_V1_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_060-WMAP_V1_rms_c0001_k000015.fits
+BAND_TOD_INIT_FROM_HDF&&&      = default
+BAND_TOD_MAIN_PROCMASK&&&      = mask_hke.fits
+BAND_TOD_FILELIST&&&           = filelist_060-WMAP_V1.txt
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_060_V1_v0.dat
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_NOISE_RMS&&&_SMOOTH01     = WMAP_V1_rms_n0032_5deg_uK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH02     = WMAP_V1_rms_n0016_10deg_uK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH03     = WMAP_V1_rms_n0016_uK_true_clean_degrade_with_rmsreg_june2021.fits
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 897
+BAND_TOD_TOT_NUMSCAN&&&        = 897
+@END 011
+
+# WMAP 061 V2
+@START 012
+@DEFAULT bands/WMAP/WMAP_V2_TOD.defaults
+BAND_MAPFILE&&&                = tod_060-WMAP_V2_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_060-WMAP_V2_rms_c0001_k000015.fits
+BAND_TOD_INIT_FROM_HDF&&&      = default
+BAND_TOD_MAIN_PROCMASK&&&      = mask_hke.fits wmap_kq75_TQU_mask_r9.fits
+BAND_TOD_FILELIST&&&           = filelist_060-WMAP_V2.txt
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_060_V2_v0.dat
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_NOISE_RMS&&&_SMOOTH01     = WMAP_V2_rms_n0032_5deg_uK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH02     = WMAP_V2_rms_n0016_10deg_uK_true.fits
+BAND_NOISE_RMS&&&_SMOOTH03     = WMAP_V2_rms_n0016_uK_true_clean_degrade_with_rmsreg_june2021.fits
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 895
+BAND_TOD_TOT_NUMSCAN&&&        = 895
+@END 012
+
+@START 013
+@DEFAULT bands/WMAP/WMAP_W1_TOD.defaults
+BAND_MAPFILE&&&                = tod_090-WMAP_W1_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_090-WMAP_W1_rms_c0001_k000015.fits
+BAND_TOD_INIT_FROM_HDF&&&      = none
+BAND_TOD_FILELIST&&&           = filelist_090-WMAP_W1.txt
+BAND_TOD_MAIN_PROCMASK&&&      = wmap_processing_mask_K_v6.fits  
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 1346
+BAND_TOD_TOT_NUMSCAN&&&        = 1346
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_090_W1_v0.dat
+@END 013
+
+@START 014
+@DEFAULT bands/WMAP/WMAP_W2_TOD.defaults
+BAND_MAPFILE&&&                = tod_090-WMAP_W2_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_090-WMAP_W2_rms_c0001_k000015.fits
+BAND_TOD_INIT_FROM_HDF&&&      = none
+BAND_TOD_FILELIST&&&           = filelist_090-WMAP_W2.txt
+BAND_TOD_MAIN_PROCMASK&&&      = wmap_processing_mask_K_v6.fits  
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 1327
+BAND_TOD_TOT_NUMSCAN&&&        = 1327
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_090_W2_v0.dat
+@END 014
+
+@START 015
+@DEFAULT bands/WMAP/WMAP_W3_TOD.defaults
+BAND_MAPFILE&&&                = tod_090-WMAP_W3_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_090-WMAP_W3_rms_c0001_k000015.fits
+BAND_TOD_INIT_FROM_HDF&&&      = none
+BAND_TOD_FILELIST&&&           = filelist_090-WMAP_W3.txt
+BAND_TOD_MAIN_PROCMASK&&&      = wmap_processing_mask_K_v6.fits  
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 1329
+BAND_TOD_TOT_NUMSCAN&&&        = 1329
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_090_W3_v0.dat
+@END 015
+
+@START 016
+@DEFAULT bands/WMAP/WMAP_W4_TOD.defaults
+BAND_MAPFILE&&&                = tod_090-WMAP_W4_map_c0001_k000015.fits
+BAND_NOISEFILE&&&              = tod_090-WMAP_W4_rms_c0001_k000015.fits
+BAND_TOD_INIT_FROM_HDF&&&      = none
+BAND_TOD_FILELIST&&&           = filelist_090-WMAP_W4.txt
+BAND_TOD_MAIN_PROCMASK&&&      = wmap_processing_mask_K_v6.fits  
+BAND_TOD_RIMO&&&               = WMAP_instrument_v13.h5
+BAND_BANDPASSFILE&&&           = WMAP_instrument_v13.h5
+BAND_TOD_TYPE&&&               = WMAP
+BAND_TOD_LEVEL&&&              = L1
+BAND_TOD_START_SCANID&&&       = 1
+BAND_TOD_END_SCANID&&&         = 1328
+BAND_TOD_TOT_NUMSCAN&&&        = 1328
+BAND_TOD_BP_INIT_PROP&&&       = bp_init_090_W4_v0.dat
+@END 016
+
+
+###################### Jibran #######################
+# LWA1 bands: 35, 38, 40, 45, 50, 60, 70, 74, 80
+@START 017
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0035.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 017
+
+@START 018
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0038.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 018
+
+@START 019
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0040.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 019
+
+@START 020
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0045.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 020
+
+@START 021
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0050.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 021
+
+@START 022
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0060.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 022
+
+@START 023
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0070.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 023
+
+@START 024
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0074.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 024
+
+@START 025
+@INCLUDE /mn/stornext/d16/cmbco/AST9240/2022/jibran/commander_inputs/defaults/LWA1-0080.defaults
+BAND_SAMP_GAIN&&&              = .false.
+@END 025
+###################### Jibran #######################
+
+
+##############################################################
+#                     Model parameters                       #
+##############################################################	
+
+INSTRUMENT_PARAM_FILE         = instrument_params_init_BP10.10.dat
+INSTRUMENT_PARAM_FILE         = init_instpar_bp10.dat
+
+###################### Jibran #######################
+INIT_INSTRUMENT_FROM_HDF      = none
+###################### Jibran #######################
+
+###################### Jibran #######################
+NUM_SIGNAL_COMPONENTS         = 8
+INCLUDE_COMP01                = .false.  # Cmb # CMB; no monopole or dipole
+INCLUDE_COMP02                = .true.  # synch # Synch power-law
+INCLUDE_COMP03                = .false.  # dust # Thermal dust
+INCLUDE_COMP04                = .true.  # md # Mono and dipoles
+INCLUDE_COMP05                = .false.  # radio # Radio sources
+INCLUDE_COMP06                = .true.  # freefree
+INCLUDE_COMP07                = .false.  # Low-freq AME
+INCLUDE_COMP08                = .false.  # CMB relativistic quadrupole
+###################### Jibran #######################
+
+NUM_CG_SAMPLING_GROUPS = 2
+
+@START 01
+###################### Jibran #######################
+CG_SAMPLING_GROUP&&          = synch,ff #,ame
+###################### Jibran #######################
+CG_SAMPLING_GROUP_MASK&&     = fullsky
+CG_SAMPLING_GROUP_MAXITER&&  = 100
+@END 01
+
+@START 02
+CG_SAMPLING_GROUP&&          = md
+CG_SAMPLING_GROUP_MASK&&     = mask_band_monopoles_bp10_chisq_comp_radio_commonDX12_n1024_TQU.fits
+CG_SAMPLING_GROUP_MAXITER&&  = 7
+@END 02
+
+@START 03
+CG_SAMPLING_GROUP&&          = cmb #,dust
+CG_SAMPLING_GROUP_MASK&&     = fullsky
+CG_SAMPLING_GROUP_MAXITER&&  = 100
+@END 03
+
+@START 04
+CG_SAMPLING_GROUP&&          = md
+CG_SAMPLING_GROUP_MASK&&     = mask_band_monopoles_bp10_chisq_comp_radio_commonDX12_n1024_TQU.fits
+CG_SAMPLING_GROUP_MAXITER&&  = 7
+@END 04
+
+# CMB
+@START 01
+@DEFAULT components/cmb/cmb_LFI.defaults
+COMP_INPUT_AMP_MAP&&          = init_cmb_amp_BP8.1_v1.fits
+COMP_AMP_INPUT_MAP&&          = init_cmb_amp_BP8.1_v1.fits
+COMP_MONOPOLE_PRIOR&&         = monopole-dipole:mask_band_monopoles_bp10_chisq_comp_radio_commonDX12_n1024_TQU.fits
+@END 01
+
+
+
+
+###################### Jibran #######################
+###################### Jibran #######################
+###################### Jibran #######################
+# Synchrotron component
+@START 02 
+@DEFAULT components/synch/synch_LFI.defaults
+COMP_AMP_INPUT_MAP&&          = init_synch_amp_BP8.1_v1.fits
+COMP_BETA_INPUT_MAP&&         = init_synch_beta_BP8.1_v1.fits
+COMP_C_S_INPUT_MAP&&          = init_synch_C_s_-0.150.fits      # BORROWED FROM /mn/stornext/d16/cmbco/AST9240/2022/daniher/param_AST9240_full.txt
+# COMP_MONOPOLE_PRIOR&&         = none    #bandmono:80MHz-LWA1  #0.4-Haslam  #<band label>      #ADDED-BY-ME
+# COMP_BETA_COMBINED_MONOPOLE_FREEZE02 = bandmono:80MHz-LWA1 #none #write band labels of band to not sample monopoles from during combined sampling. separate with comma ','        #ADDED-BY-ME
+# New Local sampling parameters
+@DEFAULT components/synch/synch_LFI_localsampler.defaults
+COMP_BETA_INT_LNLTYPE&&       = chisq       # log-likelihood type {chisq,ridge,marginal}. All evaluated at smoothing scale, local sampling      #ADDED-BY-ME
+# COMP_BETA_INT_PRIOR_MEAN&&    = -3.0      # prior sampler mean; Planck 2015     #ADDED-BY-ME
+# COMP_BETA_INT_PRIOR_RMS&&     = 0.1        # prior sampler RMS;  Planck 2015    #ADDED-BY-ME
+# COMP_BETA_PRIOR_GAUSS_RMS&&   = 0.0     #       #ADDED-BY-ME
+COMP_BETA_POL_FIX_PIXREG&&    = 1,3
+COMP_BETA_POL_PIXREG_PRIOR&&  = '-3.1,-3.3,-3.3,-3.3,'
+COMP_BETA_ALMSAMP_INIT&&      = init_alm_synch_beta_BP10.dat 
+@END 02
+###################### Jibran #######################
+###################### Jibran #######################
+###################### Jibran #######################
+
+
+
+
+# Thermal dust component
+@START 03
+@DEFAULT components/dust/dust_LFI.defaults
+COMP_NU_REF_T&&               = 857
+COMP_INDMASK&&                = mask_dust_beta_BP8_10deg_HKE.fits 
+COMP_INPUT_AMP_MAP&&          = init_dust_amp_BP8.1_v1.fits
+COMP_INPUT_BETA_MAP&&         = init_dust_beta_BP8.1_v1.fits
+COMP_INPUT_T_MAP&&            = init_dust_T_BP8.1_v1.fits
+COMP_AMP_INPUT_MAP&&          = init_dust_amp_BP8.1_v1.fits
+COMP_BETA_INPUT_MAP&&         = init_dust_beta_BP8.1_v1.fits
+COMP_T_INPUT_MAP&&            = init_dust_T_BP8.1_v1.fits
+COMP_BETA_PRIOR_GAUSS_RMS&&   =   0.0    # 0.1
+COMP_T_PRIOR_GAUSS_RMS&&      =   0.0    # 0.1
+
+@DEFAULT components/dust/dust_LFI_localsampler.defaults
+COMP_BETA_ALMSAMP_INIT&&      = init_alm_dust_beta.dat
+COMP_BETA_MASK&&              = mask_dust_beta_BP8_10deg_HKE.fits 
+COMP_INIT_FROM_HDF&&          = default
+@END 03
+
+# Mono- and dipole component
+@START 04
+@DEFAULT components/monodipole/md_LFI.defaults
+# COMP_MD_MONO_FROM_PRIOR&&     = bandmono:0.4-Haslam  #<band label> 80MHz-LWA1     #ADDED-BY-ME
+COMP_MD_MONO_FROM_PRIOR&&     = none
+###################### Jibran #######################
+COMP_MD_DEFINITION_FILE&&     = jibran/md_files/md_jibran_v02.dat
+###################### Jibran #######################
+COMP_INIT_FROM_HDF&&          = none
+@END 04
+
+# Radio sources
+@START 05
+@DEFAULT components/radio/radio_LFI.defaults
+COMP_CATALOG&&                 = COM_AT20G_GB6_NVSS_PCCS2_nothreshold_v8.dat
+COMP_INIT_CATALOG&&            = init_radio_BP8.11.dat
+COMP_PTSRC_TEMPLATE&&          = COM_AT20G_GB6_NVSS_PCCS2_nothreshold_v42.h5
+COMP_INIT_FROM_HDF&&           = default
+@END 05
+
+# freefree component ---------------------------------------------------------------------
+@START 06
+@DEFAULT components/freefree/freefree_LFI.defaults
+COMP_INPUT_AMP_MAP&&          = init_ff_amp_BP8.1_v1.fits
+COMP_PRIOR_AMP_MAP&&          = ff_prior_mean_2015_median_90arc.fits none
+COMP_AMP_INPUT_MAP&&          = init_ff_amp_BP8.1_v1.fits
+COMP_AMP_PRIOR_MAP&&          = ff_prior_mean_2015_median_90arc.fits none
+# New Local sampling parameters. 'freefree, ff'
+@DEFAULT components/freefree/freefree_LFI_localsampler.defaults
+COMP_T_E_CORRELATION_CONVERGENCE_SAMPLING&& = .false.
+COMP_T_E_COMBINED_MONOPOLE_SAMPLING&& = .false.
+COMP_INIT_FROM_HDF&&          = default
+@END 06
+
+# Low-frequency AME component ------------------------------------------------------------------
+@START 07
+@DEFAULT components/ame/ame_LFI.defaults
+COMP_SED_TEMPLATE&&           = spdust2_cnm.dat
+COMP_INPUT_AMP_MAP&&          = init_ame_amp_BP8.1_v1.fits
+COMP_AMP_INPUT_MAP&&          = init_ame_amp_BP8.1_v1.fits
+@DEFAULT components/ame/ame_LFI_localsampler.defaults
+# New Local sampling parameters, 'ame'
+COMP_INIT_FROM_HDF&&          = default
+# COMP_NU_P_PRIOR_GAUSS_RMS&& = 0.0
+@END 07
+
+
+# CMB relativistic quadrupole correction
+@START 08
+@DEFAULT components/cmb/cmb_relquad.defaults
+@END 08

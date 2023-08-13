@@ -1,0 +1,36 @@
+LWA1 Monopole/Residual Issue:
+
+
+Setup:
+(1) Only LWA1 80MHz and Haslam
+(2) Sampling both sig amps and spect idxs
+(3) Model params: Synch, md, and free-free
+(4) NOT sampling gain
+(5) 
+
+
+
+Daniel's Messages:
+>>I think I've found the cause of your issue here. Nice to see you've taken things to the simplest possible case, with just the two bands -- easier to debug!
+
+>>The issue here is that you're sampling for the monopoles and dipoles for both Haslam and 80MHz lwa1. Without another band included, or one of the two held constant, essentially anything is possible for a solution for the monopoles - there's no anchor
+    >That being said, looking at the residuals in one of  your directories (/mn/stornext/d16/cmbco/AST9240/2022/jibran/commander-chains/sample11_beta3.0_bd005017_cp020406_c1_k5), it looks like things are generally running smoothly here: (edited) 
+
+>>While the magnitudes of the residuals for lwa are definitely still large, the systematic tracers of the survey are becoming visible, which seems to indicate that most of the sky signal is actually being removed
+
+>>I'd suggest holding Haslam at your input monopole and dipole values, and try to just fit the 80 MHz monopole and synchrotron amplitude and beta and see what pops out. The fact that the signs of the residuals are different indicates an incorrect synchrotron beta -- let's see if Commander can figure that out for us. If that isn't working, you could also attempt to get a naive estimate of synch beta as we did in the course, and using that as a synch beta prior.
+    >This is definitely something that ought to be documented somewhere easy to find...but it's not haha
+        the md_jibran.txt file should have columns corresponding to:
+        #                  monopole      dipole_x      dipole_y      dipole_z      prior_mean_mp prior_mean_x  prior_mean_y  prior_mean_z  std_mp        std_dp
+        if you turn std_mp to zero, that will turn off monopole sampling, same goes for std_dp with the dipole
+
+>>JIBRAN>>I can also see in the synch_LFI.defaults file that there is a variable:
+    COMP_MONOPOLE_PRIOR&& = bandmono:0.4-Haslam  #<band label>
+I’m wondering if this needs to be changed too?
+    >>DANIEL>>I don't think it should matter...maybe changing the format to how the zeros in the other (e.g. md_hke.dat) files could potentially help with that.
+        >the fact that the synchrotron monopole is tied to Halsam shouldn't affect this, I don't think. I could be wrong though. I'd hope that it should just lock it in at the input value
+    >>JIBRAN>>I thought the consensus was to not set the rms for the mono/dipole to 0. Hans Kristian told a couple of people to put down a small nonzero value because they were getting a similar float error.
+>>hmm well that's just a little frustrating. You should set the std_dp to 0 for it to be fixed, like it is for the other bands in your example file above
+    >interesting that other's aren't getting this issue though! I believe the system should be quite unconstrained with just two bands..
+    and certainly the monopole and dipole prior values can help constrain what values are allowed by the sampler -- this could be worth messing with a little bit.
+    I'll see if I can dig around a bit
